@@ -1,0 +1,11 @@
+module CmySQLosx [system] {
+    header "/usr/local/include/mysql/mysql.h"
+    link "mysqlclient"
+    export *
+}
+
+module CmySQLlinux [system] {
+    header "/usr/include/mysql/mysql.h"
+    link "mysqlclient"
+    export *
+}

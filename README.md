@@ -1,1 +1,1 @@
-# CMySQL
+# MySQL modulemap
