@@ -1,13 +1,11 @@
 module CmySQLosx [system] {
-    header "/usr/local/include/mysql/mysql.h"
-    header "/usr/local/include/mysql/errmsg.h"
+    header "shim.h"
     link "mysqlclient"
     export *
 }
 
 module CmySQLlinux [system] {
-    header "/usr/include/mysql/mysql.h"
-    header "/usr/include/mysql/errmsg.h"
+    header "shim.h"
     link "mysqlclient"
     export *
 }
