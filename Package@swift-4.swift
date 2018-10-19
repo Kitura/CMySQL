@@ -6,6 +6,10 @@ import PackageDescription
 let package = Package(
     name: "CMySQL",
     pkgConfig: "mysqlclient",
+    providers: [
+        .brew(["mysql", "mysql@5.7", "mysql@5.6", "mysql@5.5"]),
+        .apt(["libmysqlclient-dev"])
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
